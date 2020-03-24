@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Dolby
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
@@ -201,7 +205,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
-    
+
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
