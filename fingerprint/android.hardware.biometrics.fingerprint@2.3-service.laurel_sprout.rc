@@ -10,7 +10,9 @@ on init
     chown system system /dev/fortsense_fp
 
 on boot
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
     chown system system /sys/class/touch/tp_dev/fod_status
+    chmod 0444 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui    
     chmod 0660 /sys/class/touch/tp_dev/fod_status
 
     write /sys/class/touch/tp_dev/fod_status 1
