@@ -15,5 +15,12 @@ PRODUCT_SOONG_NAMESPACES += \
 TARGET_SCREEN_HEIGHT := 1560
 TARGET_SCREEN_WIDTH := 720
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
