@@ -81,6 +81,7 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
+    androidboot.boot_devices=soc/c0c4000.sdhci \
     androidboot.memcg=1 \
     cgroup.memory=nokmem,nosocket \
     console=ttyMSM0,115200n8 \
