@@ -189,6 +189,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
