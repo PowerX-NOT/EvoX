@@ -1,3 +1,6 @@
+# CSC DC Dimming
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display/dc_dim u:object_r:vendor_sysfs_graphics:s0
+
 # Touchpanel
 genfscon sysfs /touchpanel                                      u:object_r:sysfs_touchpanel:s0
 
