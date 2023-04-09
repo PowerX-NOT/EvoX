@@ -25,8 +25,18 @@ LOCAL_OVERRIDES_PACKAGES := \
     talkback \
     SoundPickerPrebuilt \
     TrichromeLibrary \
-    TrichromeLibrary-Stub   
-
+    TrichromeLibrary-Stub \
+    OdadPrebuilt \
+    GCS \
+    GoogleTTS \
+    SafetyHubPrebuilt \
+    GoogleContacts \
+    PixelThemesStub \
+    PixelThemesStub2022_and_newer \
+    AndroidAutoStubPrebuilt \
+    Velvet \
+    WellbeingPrebuilt
+        
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
