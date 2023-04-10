@@ -156,9 +156,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.enable_hwc_vds=1 \
-	debug.sf.auto_latch_unsignaled=false \
-	debug.sf.disable_client_composition_cache=1 \
-	debug.sf.layer_caching_active_layer_timeout_ms=1000 \
+    debug.sf.auto_latch_unsignaled=false \
+    debug.sf.disable_client_composition_cache=1 \
+    debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     debug.sf.enable_gl_backpressure=1 \
     ro.opengles.version=196610 \
     ro.hardware.egl=adreno \
@@ -177,7 +177,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     debug.hwui.renderer=skiagl \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true
+    renderthread.skia.reduceopstasksplitting=true \
+    debug.force_no_blanking=true    
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
