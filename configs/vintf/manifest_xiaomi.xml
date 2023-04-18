@@ -1,0 +1,42 @@
+<manifest version="1.0" type="device">
+    <!-- Fingerprint -->
+    <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IXiaomiFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Infrared -->
+    <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IConsumerIr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- IWLAN -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIWlan</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+</manifest>

@@ -40,6 +40,10 @@ TARGET_SCREEN_DENSITY := 320
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest_xiaomi.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/xiaomi_vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 # Kernel
