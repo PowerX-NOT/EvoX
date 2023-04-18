@@ -25,6 +25,19 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+    
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.class_main.sh \
+    init.qcom.post_boot.sh
+    
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc   
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
