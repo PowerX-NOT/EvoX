@@ -185,7 +185,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=skiaglthreaded \
     renderthread.skia.reduceopstasksplitting=true \
     debug.force_no_blanking=true \
-    persist.sys.sf.color_mode=9
+    persist.sys.sf.color_mode=9 \
+    ro.hwui.render_ahead=10    
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
