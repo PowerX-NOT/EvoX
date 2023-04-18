@@ -18,24 +18,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	DeviceIntelligenceNetworkPrebuilt \
 	PlayAutoInstallConfig \
 	Velve \
-    Chrome-Stub \
-    WebViewGoogle \
-    WebViewGoogle-Stub \
-    arcore \
-    talkback \
-    SoundPickerPrebuilt \
-    TrichromeLibrary \
-    TrichromeLibrary-Stub \
-    OdadPrebuilt \
-    GCS \
-    GoogleTTS \
-    SafetyHubPrebuilt \
-    GoogleContacts \
-    PixelThemesStub \
-    PixelThemesStub2022_and_newer \
-    AndroidAutoStubPrebuilt \
-    Velvet \
-    WellbeingPrebuilt
         
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
