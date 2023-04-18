@@ -36,6 +36,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 # Display
 TARGET_SCREEN_DENSITY := 320
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # HIDL
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
