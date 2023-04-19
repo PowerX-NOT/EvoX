@@ -201,6 +201,10 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.laurel_sprout    
+    
+# Low power Whitelist
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/others/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml    
 
 # Media
 PRODUCT_PACKAGES += \
