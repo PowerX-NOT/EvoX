@@ -78,4 +78,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Whether to pulse onFingerDown actions instead
         of waking the screen while the screen is off or in lpm. -->
     <bool name="config_pulseOnFingerDown">true</bool>    
+    
+    <!-- Whether the combined qs shows in status bar when true, the combined qs will not be available
+         if set it to false  -->
+    <bool name="flag_combined_qs_headers">false</bool>    
     </resources>
