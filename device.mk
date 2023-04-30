@@ -198,7 +198,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout
+    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
+    android.hardware.biometrics.fingerprint@2.3.vendor \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
     
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
