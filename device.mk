@@ -198,10 +198,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
-    android.hardware.biometrics.fingerprint@2.3.vendor \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
+
+ifeq ($(TARGET_HAS_UDFPS),true)
+PRODUCT_PACKAGES += \
+    libudfpshandler
+
+PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
-    
+endif
+
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 

@@ -85,6 +85,9 @@ TARGET_USES_HWC2 := true
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 320
+ifeq ($(TARGET_HAS_UDFPS),true)
+TARGET_USES_FOD_ZPOS := true
+endif
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -93,9 +96,11 @@ TARGET_ENABLE_MEDIADRM_64 := true
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := cherokee
 
-# FOD
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.laurel_sprout
-TARGET_USES_FOD_ZPOS := true
+# Fingerprint
+ifeq ($(TARGET_HAS_UDFPS),true)
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
+endif
+
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
