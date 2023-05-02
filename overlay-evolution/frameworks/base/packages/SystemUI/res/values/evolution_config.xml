@@ -50,5 +50,7 @@
     <!-- Whether to pulse onFingerDown actions instead
         of waking the screen while the screen is off or in lpm. -->
     <bool name="config_pulseOnFingerDown">true</bool>
-        
+
+    <!-- Whether to find optimal display refresh rate when using udfps -->
+    <bool name="config_udfpsOptimalRefreshRate">false</bool>        
 </resources>
