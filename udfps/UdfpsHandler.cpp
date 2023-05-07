@@ -19,7 +19,7 @@
 #define PARAM_NIT_NONE 0
 
 static const char* kFodUiPaths[] = {
-        "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui",
+        "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui",
 };
 
 static const char* kFodStatusPaths[] = {
