@@ -437,6 +437,7 @@ Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
 }
 
 Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
+    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     return Void();
 }
 
