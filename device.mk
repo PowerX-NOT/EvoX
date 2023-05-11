@@ -201,7 +201,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
-
+    
 # Fs-verity
 PRODUCT_PRODUCT_PROPERTIES += ro.apk_verity.mode=2
 
@@ -290,8 +290,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     init.laurel_sprout.rc \
-    init.qti.dcvs.sh \
-    init.xiaomi_parts.rc    
+    init.qti.dcvs.sh
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -559,10 +558,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
-
-# Xiaomi
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
