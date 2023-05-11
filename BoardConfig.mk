@@ -185,7 +185,6 @@ VENDOR_SECURITY_PATCH := 2022-08-01
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble

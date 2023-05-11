@@ -215,8 +215,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=1 \
-    debug.stagefright.omx_default_rank=0 \
-    debug.stagefright.omx_default_rank.sw-audio=16
+    debug.stagefright.omx_default_rank=0
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
@@ -288,8 +287,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Zygote
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     zygote.critical_window.minute=10
-    
-# Dolby
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.audio_fx.current=dolby \
-    ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1    

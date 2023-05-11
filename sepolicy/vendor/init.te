@@ -1,6 +1,2 @@
 # Allow init to write to sysfs_battery_supply
 allow init vendor_sysfs_battery_supply:file { setattr };
-
-# Dolby
-allow init vendor_data_file:file lock;
-allow init hal_audio_default:binder call;
