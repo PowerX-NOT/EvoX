@@ -45,56 +45,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">68</integer>
 
-    <!-- Use framework FOD dimming instead of kernel dimming -->
-    <bool name="config_udfpsFrameworkDimming">true</bool>
-
-    <!-- Array of brightness-alpha lut for framework dimming -->
-    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
-        <item>1,243</item>
-        <item>61,212</item>
-        <item>121,197</item>
-        <item>181,185</item>
-        <item>241,175</item>
-        <item>301,167</item>
-        <item>362,159</item>
-        <item>422,152</item>
-        <item>482,146</item>
-        <item>542,139</item>
-        <item>602,134</item>
-        <item>662,129</item>
-        <item>723,123</item>
-        <item>783,118</item>
-        <item>843,114</item>
-        <item>903,110</item>
-        <item>963,105</item>
-        <item>1024,101</item>
-        <item>1084,97</item>
-        <item>1144,93</item>
-        <item>1204,89</item>
-        <item>1264,86</item>
-        <item>1324,82</item>
-        <item>1385,78</item>
-        <item>1445,75</item>
-        <item>1505,71</item>
-        <item>1565,68</item>
-        <item>1625,65</item>
-        <item>1685,62</item>
-        <item>1746,59</item>
-        <item>1806,55</item>
-        <item>1866,52</item>
-        <item>1926,49</item>
-        <item>1986,46</item>
-        <item>2047,43</item>
-    </string-array>
-
-    <!-- The scale factor for framework dimming -->
-    <integer name="config_udfpsDimmingBrightnessMax">2047</integer>
-
-    <!-- The amount of delay to add when disabling the dimming.
-         This is used to prevent flickers due to the dimming being disabled
-         before the screen has had chance to switch out of HBM mode -->
-     <integer name="config_udfpsDimmingDisableDelay">35</integer>
-
     <!-- Whether to pulse onFingerDown actions instead
         of waking the screen while the screen is off or in lpm. -->
     <bool name="config_pulseOnFingerDown">true</bool>    
