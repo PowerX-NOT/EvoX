@@ -12,8 +12,6 @@
 /dev/goodix_fp                                  u:object_r:fingerprint_device:s0
 
 # FOD
-/sys/class/drm/card0-DSI-1/disp_param                                                          u:object_r:sysfs_fod:s0
-/sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param               u:object_r:sysfs_fod:s0
 /sys/class/touch/tp_dev/fod_status                                                             u:object_r:sysfs_fod:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui                                          u:object_r:sysfs_fod:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm                                             u:object_r:vendor_sysfs_hbm:s0
